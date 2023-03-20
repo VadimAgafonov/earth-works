@@ -1,0 +1,278 @@
+:root {
+    --color1: #DAA520;
+    --color2: #fff;
+}
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    overflow-x: hidden;
+}
+
+
+header,
+footer,
+section {
+    padding: 100px 0;
+}
+
+header {
+    padding: 50px 0px 900px;
+}
+
+header {
+    /* height: 100vh; */
+    height: 1200px;
+    background: url(../img/bg-header2.jpg), var(--color1);
+    background: url(../img/bg-header2.jpg), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/bg-header2.jpg), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/bg-header2.jpg), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    filter: url(../img/bg-header2.jpg), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+    background-size: cover;
+}
+
+
+
+.nav__icon {
+ position: relative;
+}
+
+.navbar a p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color1);
+    font-size: 20px;
+}
+
+.first__text {
+    color: var(--color1);
+}
+
+.nav__title {
+    color: var(--color2);
+    font-size: 24px;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+.navbar {
+    border: 1px solid #DAA520;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--color2);
+
+    transition: color .2s linear,
+                border-bottom .2s linear;
+}
+
+.nav-link:hover {
+    color: var(--color1);
+    border-bottom: 1px solid #DAA520;
+}
+.nav {
+    top: -100px;
+    left: 0;
+  
+    z-index: 10;
+    transition: all .2s ease;
+}
+
+.nav.fixed {
+    position: fixed;
+    
+    transform: translateY(100px);
+    width: 100%;
+    background-color: var(--color1);
+}
+.fixed a:hover {
+    border: none;
+    color: #121214;
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    color: var(--color2);
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.header-about {
+    /* padding-top: 200px; */
+}
+
+.nav-right {
+    display: flex;
+   
+    position: fixed;
+    z-index: 1000;
+    top: center;
+    color: #fff;
+    left: 0;
+}
+
+.nav-right ul li {
+    list-style: none;
+}
+.icon i{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #DAA520;
+
+    transition: background-color .2s linear,
+                border .2s linear;
+}
+.icon i:hover {
+    background-color: black;
+    border: 1px solid #fff;
+}
+
+
+/* EARTH WORK */
+
+.font-size {
+    font-size: 20px;
+}
+
+.earth-work {
+    background-color: #121214;
+}
+
+.earth-title {
+    color: var(--color2);
+    margin-bottom: 80px;
+}
+.col-12 p {
+    color: var(--color2);
+}
+.col-12 ul, ol {
+    color: var(--color1);
+}
+
+.slide {
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+.earth-text {
+    margin-top: 50px;
+    color: var(--color2);
+}
+
+/* OURS WORK */
+
+.ours-work {
+    /* height: 100vh; */
+    background: url(../img/bg-header.jpg), var(--color1);
+    background: url(../img/bg-header.jpg), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/bg-header.jpg), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/bg-header.jpg), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    filter: url(../img/bg-header.jpg), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.ours-text {
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.ours-text p {
+    margin: 0;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide-img {
+  height: 60vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+
+.slide-img.active {
+    flex: 10
+  }
+
+.col-12 h3 {
+    color: var(--color2);
+}
+  
+.example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* BUILDING WORK */
+
+.building-work {
+    /* height: 100vh; */
+    background-color: #121214;
+}
+
+.img-fluid {
+    width: 500px;
+}
+
+/* PRICE */
+
+.price {
+    /* height: 100vh; */
+    background: url(../img/bg-price.jpg), var(--color1);
+    background: url(../img/bg-price.jpg), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/bg-price.jpg), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/bg-price.jpg), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    filter: url(../img/bg-price.jpg), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+    background-size: cover;
+}
+
+.line {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dashed var(--color1);
+    text-transform: uppercase;
+}
+.span-white {
+    color: var(--color2);
+}
+
+/* CONTACTS */
+
+.contacts {
+    background-color: #121214;
+}
+
+.border-line {
+    padding: 20px;
+    border: 1px dashed var(--color1);
+}
+
+
